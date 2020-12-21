@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import CardColumns from "react-bootstrap/CardColumns"
-import Session from "./Session"
+import SessionCard from "./SessionCard"
 
 class SessionList extends Component {
 	state = {
@@ -16,14 +16,11 @@ class SessionList extends Component {
 	}
 
 	render() {
-		const SessionListStyle = {
-			margin: 10
-		}
 		return (
-			<div style={SessionListStyle}>
+			<div>
 				<CardColumns>
 					{this.state.sessions.map((session) => {
-						return <Session key={session._id} name={session.name} />
+						return <SessionCard key={session._id} id={session._id} name={session.name} />
 					})}
 				</CardColumns>
 			</div>
