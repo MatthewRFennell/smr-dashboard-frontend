@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import "./App.css";
 import SessionList from "./SessionList"
 import Navbar from "react-bootstrap/Navbar"
+const backend = process.env.BACKEND
 
 class App extends Component {
 	state = {
@@ -9,7 +10,7 @@ class App extends Component {
 	}
 
 	componentDidMount() {
-		fetch("https://smr-dashboard-backend.herokuapp.com/sessions")
+		fetch(`${backend}/sessions`)
 		.then(res => res.json())
 		.then((cars) => {
 			this.setState({ cars: cars })
