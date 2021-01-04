@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import CardColumns from "react-bootstrap/CardColumns"
 import { withRouter } from "react-router-dom"
 import CarCard from "./CarCard"
-import Card from "react-bootstrap/Card"
 const backend = process.env.REACT_APP_BACKEND
 
 class CarList extends Component {

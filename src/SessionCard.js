@@ -1,12 +1,6 @@
 import React, { Component } from "react"
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	Link
-} from "react-router-dom"
+import { Link } from "react-router-dom"
 import Card from "react-bootstrap/Card"
-import Session from "./Session"
 
 class SessionCard extends Component {
 	render() {

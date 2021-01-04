@@ -19,7 +19,6 @@ class Session extends Component {
 	}
 
 	render() {
-		const { sessionId } = this.props.match.params
 		return (
 			<div>
 				<h2>{this.state.session.name}</h2>
